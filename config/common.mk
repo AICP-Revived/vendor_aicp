@@ -30,6 +30,10 @@ include vendor/aicp/google/GoogleAudio.mk
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aicp/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
 
+# Translations
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
+
 # TWRP
 ifeq ($(BUILD_TWRP),true)
 RECOVERY_TYPE := twrp
