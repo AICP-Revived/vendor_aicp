@@ -1,3 +1,6 @@
+# Recovery
+BOARD_USES_FULL_RECOVERY_IMAGE ?= true
+
 # Charger
 ifeq ($(WITH_AICP_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.aicp
